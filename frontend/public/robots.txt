@@ -1,0 +1,104 @@
+# robots.txt for Skillora Design Academy
+# Last updated: 2025-08-05
+
+# Global rules for all crawlers
+User-agent: *
+Allow: /
+
+# Disallow access to private and system directories
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.sql.gz$
+Disallow: /*.bak$
+Disallow: /*.swp$
+Disallow: /*.old$
+Disallow: /*.tmp$
+
+# Crawl-delay for polite crawling (requests per second)
+Crawl-delay: 10
+
+# Sitemap location (XML format)
+Sitemap: https://skilloraacademy.com/sitemap.xml
+
+# Rules for specific search engines
+# Googlebot
+User-agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Bingbot
+User-agent: bingbot
+Crawl-delay: 5
+
+# Block common AJAX requests
+Disallow: /*?*
+Disallow: /*&*
+
+# Block development and staging environments
+Disallow: /*?preview*
+Disallow: /*?debug*
+
+# Block search result pages from being indexed
+Disallow: /search
+Disallow: /search/*
+
+# Block admin and account pages
+Disallow: /account/*
+Disallow: /dashboard/*
+Disallow: /checkout/*
+Disallow: /cart
+
+# Block internal search results
+Disallow: /*?s=
+Disallow: /*&s=
+
+# Allow media files
+Allow: /media/
+Allow: /images/
+Allow: /assets/
+
+# Block common CMS paths
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
