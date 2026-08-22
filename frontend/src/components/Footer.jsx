@@ -99,7 +99,7 @@ const Footer = () => {
               />
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
                 Empowering the next generation of creative professionals through
-                innovative education and industry-relevant skills training.
+                innovative education and industry-relevant skills training for tomorow.
               </p>
 
               <div className="space-y-3 text-sm text-gray-300">
