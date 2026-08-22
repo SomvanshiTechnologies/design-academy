@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { usePageMeta } from '../hooks/usePageMeta.jsx'
 import Navbar from '../components/Navbar'
-import Landingg from '../components/Landing'
+import Landing from '../components/Landing'
 import Herobox from '../components/Herobox'
 import AboutUs from '../components/AboutUs'
 import EducationDirections from '../components/EducationDirections'
